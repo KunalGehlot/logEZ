@@ -9,16 +9,16 @@ classifiers = [
 ]
 
 setup(
-    name="log-ez",
+    name="log_ez",
     version="0.0.4",
     description="A simple logger for Python",
     long_description=open("README.md").read() + "\n\n" + open("CHANGELOG.txt").read(),
-    url="https://github.com/KunalGehlot/log-ez",
+    url="https://github.com/KunalGehlot/log_ez",
     author="Zackcodes.ai",
     author_email="gehlotkunal@outlook.com",
     license="MIT",
     classifiers=classifiers,
     keywords="logging",
     packages=find_packages(),
-    install_requires=["logging"],
+    install_requires=[""],
 )

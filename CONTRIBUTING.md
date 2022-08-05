@@ -12,7 +12,7 @@ Any contribution is appreciated! You might want to:
 
 ## How can I contribute?
 
-* Use [issues](https://github.com/KunalGehlot/log-ez/issues) to report bugs and features
+* Use [issues](https://github.com/KunalGehlot/log_ez/issues) to report bugs and features
     - If you report a bug in the results for a particular pdf, include that pdf. This allows others to replicate the
      issue. 
 * Fix issues by [creating pull requests](https://help.github.com/en/articles/creating-a-pull-request).

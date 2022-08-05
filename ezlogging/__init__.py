@@ -5,7 +5,7 @@ rootLogger = logging.getLogger()
 class MyLogger:
     def __init__(
         self,
-        log_file_name="log-ez.log",
+        log_file_name="log_ez.log",
         logging_level="INFO",
         disable_console_logs=False,
         disable_file_logs=False
@@ -41,7 +41,7 @@ class MyLogger:
             consoleHandler.setFormatter(logFormatter)
             rootLogger.addHandler(consoleHandler)
 
-        self.myDebug("Log-EZ initialized...")
+        self.myDebug("Log_EZ initialized...")
 
     def setLoggingLevel(self, level):
         rootLogger.setLevel(level)
