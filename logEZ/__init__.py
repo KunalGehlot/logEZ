@@ -14,7 +14,7 @@ class MyLogger:
         if disable_console_logs and disable_file_logs:
             raise Exception("Both console and file logs are disabled")
 
-        logging_levels = {
+        self.logging_levels = {
             "INFO": logging.INFO,
             "DEBUG": logging.DEBUG,
             "WARNING": logging.WARNING,
@@ -27,7 +27,7 @@ class MyLogger:
             "%(asctime)s - %(name)s : %(levelname)s : %(message)s", "%d-%m-%y %H:%M:%S"
         )
 
-        rootLogger.setLevel(logging_levels[logging_level])
+        rootLogger.setLevel(self.logging_levels[logging_level])
 
         if not disable_file_logs:
             # Save logs to log file
@@ -44,7 +44,7 @@ class MyLogger:
         self.myDebug("logEZ initialized...")
 
     def setLoggingLevel(self, level):
-        rootLogger.setLevel(level)
+        rootLogger.setLevel(self.logging_levels[level])
 
     def myDebug(self, inString):
         rootLogger.debug(inString)
@@ -61,5 +61,5 @@ class MyLogger:
     def myCrit(self, inString, exc_info=False):
         rootLogger.critical(inString, exc_info=exc_info)
 
-    def myExecpt(self, inString):
+    def myExcept(self, inString):
         rootLogger.exception(inString)
