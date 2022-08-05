@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
     name="logEZ",
-    version="0.0.1",
+    version="0.0.2",
     description="A simple logger for Python",
     long_description=open("README.md").read() + "\n\n" + open("CHANGELOG.txt").read(),
     url="https://github.com/KunalGehlot/logEZ",
