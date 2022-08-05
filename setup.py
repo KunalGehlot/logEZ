@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
     name="log_ez",
-    version="0.0.4",
+    version="0.0.5",
     description="A simple logger for Python",
     long_description=open("README.md").read() + "\n\n" + open("CHANGELOG.txt").read(),
     url="https://github.com/KunalGehlot/log_ez",

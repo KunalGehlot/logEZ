@@ -16,3 +16,7 @@ Change Log
 0.0.4 (05/08/2022)
 ------------------------
 - Removed requirements.txt
+
+0.0.5 (05/08/2022)
+------------------------
+- Removed logging from install_requires
