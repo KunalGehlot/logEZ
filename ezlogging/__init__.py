@@ -9,7 +9,7 @@ class MyLogger:
         log_file_name="log-ez.log",
         logging_level="INFO",
         disable_console_logs=False,
-        disable_file_logs=False,
+        disable_file_logs=False
     ) -> None:
 
         if disable_console_logs and disable_file_logs:
