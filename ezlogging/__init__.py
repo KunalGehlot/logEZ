@@ -2,7 +2,6 @@ import logging
 
 rootLogger = logging.getLogger()
 
-
 class MyLogger:
     def __init__(
         self,
