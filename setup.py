@@ -9,11 +9,11 @@ classifiers = [
 ]
 
 setup(
-    name="ezlogger",
+    name="log-ez",
     version="0.0.1",
     description="A simple logger for Python",
     long_description=open("README.md").read() + "\n\n" + open("CHANGELOG.txt").read(),
-    url="https://github.com/KunalGehlot/ezlogger",
+    url="https://github.com/KunalGehlot/log-ez",
     author="Zackcodes.ai",
     author_email="gehlotkunal@outlook.com",
     license="MIT",
