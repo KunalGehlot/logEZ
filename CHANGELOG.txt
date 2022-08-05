@@ -12,3 +12,4 @@ Change Log
 0.0.3 (05/08/2022)
 ------------------------
 - Please work ;-;
+- Removed requirements.txt
