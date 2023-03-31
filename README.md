@@ -102,3 +102,18 @@ Advantages of logEZ:
 However, for more advanced logging use cases or if you require fine-grained control over your logging configuration, the built-in logging module offers more comprehensive features and flexibility. If you are already familiar with the standard logging module, you may not find logEZ to be significantly more helpful.
 
 In summary, the logEZ library can be useful for developers looking for a simpler and more accessible interface for basic logging tasks. However, it might not offer substantial advantages over the built-in logging module for more experienced users or advanced logging scenarios.
+
+## What's next?
+
+We have some exciting plans for the future development of logEZ, and we're always looking for ways to make it even more useful for our users. Here's a list of features we're considering adding:
+
+1. Configuration from file support
+2. Log rotation functionality
+3. Support for custom log handlers
+4. Colored console logs
+5. Enhanced context information in log messages
+6. Improved exception handling and logging
+7. Integrated performance metrics
+8. Advanced filtering capabilities
+9. Asynchronous logging support
+10. Better documentation and examples
