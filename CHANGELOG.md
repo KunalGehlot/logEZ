@@ -1,6 +1,8 @@
 # Change Log
 
-## [Unreleased]
+## Unreleased
+
+## [0.1.0]
 ### Updated
 - Refactored the code to adhere to PEP8 standards for better readability and maintainability.
 - Added type hints to function signatures for improved code comprehension and editor support.
@@ -13,6 +15,7 @@
 - Enhanced the library with docstrings for better documentation and understanding.
 - Updated the `README.md` file to provide clearer instructions on how to use the library, including examples and explanations of the new features.
 - Improved the `setup.py` file to adhere to the latest Python norms and standards.
+- Added `nox` as a development dependency to simplify the development workflow.
 
 ## [0.0.3] - 2022-05-08
 ### Updated

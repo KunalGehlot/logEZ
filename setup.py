@@ -19,7 +19,7 @@ with open("CHANGELOG.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="logEZ",
-    version="0.0.4",
+    version="0.1.0",
     description="A simple(r) logger for Python",
     long_description=long_description,
     long_description_content_type="text/markdown",
