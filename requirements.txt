@@ -1,2 +1,5 @@
 nox
 pytest
+wheel
+twine
+setuptools
