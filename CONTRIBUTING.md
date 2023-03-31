@@ -1,19 +1,43 @@
-# Contributing guidelines
+# Contributing Guidelines
 
-Any contribution is appreciated! You might want to:
+Thank you for considering contributing to the logEZ project! We appreciate any contributions, including:
 
-* Fix spelling errors
-* Improve documentation
-* Add tests
-* Add new features
-* Fix bugs
+- Fixing spelling errors
+- Improving documentation
+- Adding tests
+- Implementing new features
+- Fixing bugs
+- Providing feedback and suggestions
 
-> Note: Feel free to point out any obvious flaw I might have made, I'm new to this and welcome any feedback or help.
+> Note: We are open to feedback and collaboration. Please feel free to point out any areas where we can improve.
 
 ## How can I contribute?
 
-* Use [issues](https://github.com/KunalGehlot/logEZ/issues) to report bugs and features
-    - If you report a bug in the results for a particular pdf, include that pdf. This allows others to replicate the
-     issue. 
-* Fix issues by [creating pull requests](https://help.github.com/en/articles/creating-a-pull-request).
-* Help others by sharing your thoughts in comments on issues and pull requests.
+- **Report bugs and suggest features** by using [issues](https://github.com/KunalGehlot/logEZ/issues).
+  - When reporting a bug, please include any relevant details or files to help replicate the issue.
+  - When suggesting a feature, provide a clear and concise description of the feature and its benefits.
+
+- **Fix issues** by [creating pull requests](https://help.github.com/en/articles/creating-a-pull-request).
+  - Before starting work on a pull request, make sure the issue hasn't already been assigned to someone else.
+  - When submitting a pull request, provide a clear description of the changes and reference the related issue.
+
+- **Review and discuss** issues and pull requests to help others by sharing your thoughts and insights.
+
+- **Improve documentation** by updating the README, adding docstrings, or creating guides and tutorials.
+
+- **Add tests** to ensure the library's stability and maintainability.
+
+## Code of Conduct
+
+Please follow our [Code of Conduct](CODE_OF_CONDUCT.md) to foster a welcoming and inclusive environment for all contributors.
+
+## Development Workflow
+
+1. Fork the repository and clone it to your local machine.
+2. Set up a virtual environment and install the required dependencies.
+3. Make your changes, adhering to the project's coding standards and guidelines.
+4. Test your changes and ensure they don't break existing functionality.
+5. Commit your changes and push them to your fork.
+6. Create a pull request, providing a clear and concise description of your changes.
+
+We look forward to collaborating with you and making logEZ an even more valuable logging library for Python developers!
