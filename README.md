@@ -1,19 +1,34 @@
 # logEZ
+
 Make logging easy in your applications! Use this simple library to easily use logs in any of your applications.
 
-# How to run
+## Installation
+
+```bash
+pip install logEZ
+```
+
+## How to use
 
 ```python
 from logEZ import MyLogger
 
 logger = MyLogger()
 ```
-## `MyLogger()`
 
-The `init` method of class MyLogger takes four default arguments. 
-`log_file_name`, `logging_level`, `disable_console_logs` and `disable_file_logs`
+More in [Sample App](./sample_app.md)
 
-The default values are
+### `MyLogger` class
+
+The __init__ method of the MyLogger class takes four optional arguments:
+
+* `log_file_name`
+* `logging_level`
+* `disable_console_logs`
+* `disable_file_logs`
+
+The default values are:
+
 ```python
 log_file_name="logEZ.log",
 logging_level="INFO",
@@ -21,31 +36,55 @@ disable_console_logs=False,
 disable_file_logs=False
 ```
 
-- `log_file_name`
+* `log_file_name`: Specify the file name of your log file here.
+* `logging_level`: Specify the default logging level of your logs. It can be `INFO`, `DEBUG`, `WARNING`, `ERROR`, or `CRITICAL`.
+* `disable_console_logs`: Disable the console logging of your logs, if set to `True`.
+* `disable_file_logs`: Disable the file logging of your logs, if set to `True`.
 
-    You can specify the file name of your log file here.
+### `MyLogger` methods
 
-- `logging_level`
+Once you have initialized a MyLogger object, you can use the following methods:
 
-    You can specify the default logging level of your logs.
+* `setLoggingLevel(level: str)`: Change the logging level after initializing `MyLogger()`. (Refer to logging_level under [`MyLogger` class](#mylogger-class) for levels.)
+* `debug(inString: str)`: Log a `DEBUG` level message. Accepts a string input.
+* `info(inString: str)`: Log an `INFO` level message. Accepts a string input.
+* `warning(inString: str)`: Log a `WARNING` level message. Accepts a string input.
+* `error(inString: str, exc_info: Optional[bool] = False)`: Log an `ERROR` level message. Accepts a string input. If `exc_info` is set to True, it appends the complete execution information along with the log string.
+* `critical(inString: str, exc_info: Optional[bool] = False)`: Log a `CRITICAL` level message. Accepts a string input. If `exc_info` is set to True, it appends the complete execution information along with the log string.
+* `myExcept(inString: str)`: Log an exception message. Accepts a string input.
 
-    It can be `INFO`, `DEBUG`, `WARNING`, `ERROR` or `CRITICAL`
+#### Using `exc_info` to send complete execution information
 
-- `disable_console_logs`
+The `exc_info` parameter is an optional argument available in the `error` and `critical` methods of the `MyLogger` class. When set to `True`, it appends the complete execution information, including the traceback, along with the log message. This can be particularly useful when debugging errors or critical issues that require detailed information about the context in which they occurred.
 
-    This disables the console logging of your logs, if set `True`.
+Here's an example of how to use the `exc_info` parameter with myError and `critical` methods:
 
-- `disable_file_logs`
+```python
+from logEZ import MyLogger
 
-    This disables the file logging of your logs, if set `True`.
+logger = MyLogger()
 
-## Methods
-Once you have an object initialized, you can use the following methods.
+def divide(a, b):
+    try:
+        result = a / b
+    except ZeroDivisionError as e:
+        logger.myError(f"An error occurred while dividing {a} by {b}", exc_info=True)
+        return None
+    return result
 
- - `setLoggingLevel(level)`: To change the logging level after initializing `MyLogger()`. (Refer `logging_level` under `MyLogger()` for levels)
- - `myDebug(str)`: To print a `debug` log. Accepts string input.
- - `myInfo(str)`: To print an `info` log. Accepts string input.
- - `myWarn(str)`: To print a `warning` log. Accepts string input.
- - `myError(str, exc_info[Optional])`: To print an `error` log. Accepts string input. If `exc_info` is set `True`, it appends complete execution information along with the log string.
- - `myCrit(strm exc_info[Optional])`: To print an `error` log. Accepts string input. If `exc_info` is set `True`, it appends complete execution information along with the log string.
- - `myExcept(str)`: To print an `exception` log. Accepts string input.
+divide(10, 0)
+```
+
+In this example, we have a `divide` function that takes two numbers as arguments and attempts to perform a division operation. If a `ZeroDivisionError` exception is raised, the `error` method is called with the `exc_info` parameter set to `True`. This will log the error message along with the complete execution information, including the traceback, making it easier to understand the context in which the error occurred.
+
+The output of this code will be:
+
+```bash
+01-04-23 14:35:28 - root : ERROR : An error occurred while dividing 10 by 0
+Traceback (most recent call last):
+  File "example.py", line 7, in divide
+    result = a / b
+ZeroDivisionError: division by zero
+```
+
+Similarly, you can use the `exc_info` parameter with the `critical` method if you want to log critical messages with complete execution information.
