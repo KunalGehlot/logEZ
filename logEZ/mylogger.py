@@ -10,11 +10,12 @@ root_logger = logging.getLogger()
 
 
 class MyLogger:
-    """A simple logging class that wraps around the standard Python logging library.
+    """A simple logging class that wraps around the
+    standard Python logging library.
 
     Attributes:
-        logging_levels (Dict[str, int]): A dictionary mapping logging level names to their
-                                         respective logging level values.
+        logging_levels (Dict[str, int]): A dictionary mapping
+        logging level names to their respective logging level values.
     """
 
     def __init__(
@@ -27,13 +28,13 @@ class MyLogger:
         """Initialize the MyLogger instance.
 
         Args:
-            log_file_name (str, optional): Name of the log file to write logs to.
+            log_file_name (str, optional): Name of the log file to write logs to. # noqa: E501
             Defaults to 'logEZ.log'.
-            logging_level (str, optional): The initial logging level.
+            logging_level (str, optional): The initial logging level. # noqa: E501
             Defaults to 'INFO'.
-            disable_console_logs (bool, optional): If True, disable logging to the console.
+            disable_console_logs (bool, optional): If True, disable logging to the console. # noqa: E501
             Defaults to False.
-            disable_file_logs (bool, optional): If True, disable logging to the file.
+            disable_file_logs (bool, optional): If True, disable logging to the file. # noqa: E501
             Defaults to False.
 
         Raises:

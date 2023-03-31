@@ -19,7 +19,9 @@ def get_console_handler(formatter: Formatter) -> StreamHandler:
 
 
 def get_file_handler(log_file_name: str, formatter: Formatter) -> FileHandler:
-    """Create and return a file handler with the specified formatter and log file name.
+    """
+    Create and return a file handler with
+    the specified formatter and log file name.
 
     Args:
         log_file_name (str): The name of the log file to write logs to.
