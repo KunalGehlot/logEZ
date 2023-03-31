@@ -117,3 +117,7 @@ We have some exciting plans for the future development of logEZ, and we're alway
 8. Advanced filtering capabilities
 9. Asynchronous logging support
 10. Better documentation and examples
+
+_We're open to contributions!_ If you'd like to help implement any of these features or have suggestions for improvements, please feel free to reach out to us. You can contact us at [gehlotkunal@outlook.com](mailto:gehlotkunal@outlook.com) or connect with us on Twitter at [@ZackCodesAI](https://twitter.com/ZackCodesAI).
+
+We're looking forward to collaborating with the community to make logEZ an even more valuable and versatile logging library for Python developers!
