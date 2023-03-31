@@ -27,6 +27,18 @@ Thank you for considering contributing to the logEZ project! We appreciate any c
 
 - **Add tests** to ensure the library's stability and maintainability.
 
+## Before submitting a pull request
+
+Please ensure that you run `nox` before submitting a pull request. This will run the automated tests, linting, and formatting checks for the project, ensuring that your contribution adheres to the project's standards.
+
+To run `nox`, simply execute the following command in your terminal:
+
+```bash
+  nox
+```
+
+If any issues are found during the `nox` execution, please address them before submitting your pull request.
+
 ## Code of Conduct
 
 Please follow our [Code of Conduct](CODE_OF_CONDUCT.md) to foster a welcoming and inclusive environment for all contributors.
