@@ -88,3 +88,17 @@ ZeroDivisionError: division by zero
 ```
 
 Similarly, you can use the `exc_info` parameter with the `critical` method if you want to log critical messages with complete execution information.
+
+## Why use logEZ?
+
+The logEZ library provides a simplified interface to work with the standard logging module in Python. While it does not introduce any new functionality or significant improvements over the built-in logging module, it may be helpful for developers who want a more straightforward, easy-to-use API for common logging tasks.
+
+Advantages of logEZ:
+
+1. Simplified initialization: The logEZ library makes it easier to set up logging with default values and simple customization options. You can easily configure log file names, logging levels, and toggle console or file logging with just a few parameters.
+2. Unified logging methods: The logEZ library offers a single class, MyLogger, with methods for different logging levels (debug, info, warning, error, critical), making it more convenient to use compared to the standard logging module, which requires calling separate functions for each logging level.
+3. Easier traceback logging: The logEZ library provides the exc_info parameter for error and critical level logs, making it more straightforward to include traceback information when logging exceptions.
+
+However, for more advanced logging use cases or if you require fine-grained control over your logging configuration, the built-in logging module offers more comprehensive features and flexibility. If you are already familiar with the standard logging module, you may not find logEZ to be significantly more helpful.
+
+In summary, the logEZ library can be useful for developers looking for a simpler and more accessible interface for basic logging tasks. However, it might not offer substantial advantages over the built-in logging module for more experienced users or advanced logging scenarios.
