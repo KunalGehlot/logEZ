@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
     name="logEZ",
-    version="0.0.3",
+    version="0.0.4",
     description="A simple(r) logger for Python",
     long_description=open("README.md").read() + "\n\n" + open("CHANGELOG.txt").read(),
     long_description_content_type='text/markdown',
