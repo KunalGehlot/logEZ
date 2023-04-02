@@ -51,7 +51,6 @@ Once you have initialized a MyLogger object, you can use the following methods:
 * `warning(inString: str)`: Log a `WARNING` level message. Accepts a string input.
 * `error(inString: str, exc_info: Optional[bool] = False)`: Log an `ERROR` level message. Accepts a string input. If `exc_info` is set to True, it appends the complete execution information along with the log string.
 * `critical(inString: str, exc_info: Optional[bool] = False)`: Log a `CRITICAL` level message. Accepts a string input. If `exc_info` is set to True, it appends the complete execution information along with the log string.
-* `myExcept(inString: str)`: Log an exception message. Accepts a string input.
 
 #### Using `exc_info` to send complete execution information
 
