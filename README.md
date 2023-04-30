@@ -106,16 +106,16 @@ In summary, the logEZ library can be useful for developers looking for a simpler
 
 We have some exciting plans for the future development of logEZ, and we're always looking for ways to make it even more useful for our users. Here's a list of features we're considering adding:
 
-1. Configuration from file support
-2. Log rotation functionality
-3. Support for custom log handlers
-4. Colored console logs
-5. Enhanced context information in log messages
-6. Improved exception handling and logging
-7. Integrated performance metrics
-8. Advanced filtering capabilities
-9. Asynchronous logging support
-10. Better documentation and examples
+- [ ] Configuration from file support
+- [ ] Log rotation functionality
+- [ ] Support for custom log handlers
+- [ ] Colored console logs
+- [ ] Enhanced context information in log messages
+- [ ] Improved exception handling and logging
+- [ ] Integrated performance metrics
+- [ ] Advanced filtering capabilities
+- [ ] Asynchronous logging support
+- [ ] Better documentation and examples
 
 _We're open to contributions!_ If you'd like to help implement any of these features or have suggestions for improvements, please feel free to reach out to us. You can contact us at [gehlotkunal@outlook.com](mailto:gehlotkunal@outlook.com).
 
